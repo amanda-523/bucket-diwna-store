@@ -9197,7 +9197,7 @@ body {
 }
 
 .page-content {
-  margin-top: 105px;
+  margin-top: 100px;
 }
 
 footer {
@@ -9205,7 +9205,7 @@ footer {
   margin-top: 150px;
 }
 footer p {
-  color: #979797;
+  color: #9e9e9e;
 }
 
 .form-control {
@@ -9249,16 +9249,21 @@ footer p {
 }
 
 .page-home h5 {
-  font-weight: 300;
+  font-weight: normal;
   margin-bottom: 15px;
 }
 .page-home .store-trend-categories {
   margin-top: 30px;
 }
-.page-home .store-new-product {
+.page-home .store-new-products {
   margin-top: 10px;
 }
 
+.page-details h5 {
+  font-weight: normal;
+  font-size: 18px;
+  color: #000;
+}
 .page-details .store-gallery {
   margin-top: 20px;
 }
@@ -9272,6 +9277,30 @@ footer p {
 .page-details .store-gallery .thumbnail-image:hover, .page-details .store-gallery .thumbnail-image.active {
   border: 2px solid #5ca4df;
 }
+.page-details .store-heading {
+  margin-bottom: 10px;
+}
+.page-details .store-heading h1 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #131313;
+  margin-bottom: 0px;
+}
+.page-details .store-heading .price {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5ca4df;
+  margin-bottom: 10px;
+}
+.page-details .store-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  color: #666666;
+  margin-bottom: 0px;
+}
 
 .store-breadcrumbs .breadcrumb {
   background: transparent;
@@ -9282,20 +9311,21 @@ footer p {
 .store-breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  color: #5ca4df;
 }
 .store-breadcrumbs .breadcrumb-item.active {
-  font-weight: 300;
-  color: #131313;
+  font-weight: normal;
+  color: #5ca4df;
 }
 .store-breadcrumbs a {
   color: #bababa;
 }
 
 .component-categories {
-  background: #72B0E3;
+  background: #72b0e3;
   border-radius: 8px;
   padding: 30px 30px 10px 30px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   transition: all 0.2s ease-in-out;
 }
 .component-categories:hover {
@@ -9305,7 +9335,7 @@ footer p {
 .component-categories .categories-text {
   font-size: 16px;
   text-align: center;
-  color: #131313;
+  color: #ffffff;
   font-weight: normal;
   margin-top: 12px;
 }
@@ -9343,7 +9373,7 @@ footer p {
   margin-top: 5px;
 }
 .component-products .products-price {
-  font-weight: 500;
+  font-weight: normal;
   font-size: 16px;
   color: #5ca4df;
 }

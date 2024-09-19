@@ -9,11 +9,12 @@
   .breadcrumb-item + .breadcrumb-item::before {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    color: #5ca4df;
   }
 
   .breadcrumb-item.active {
-    font-weight: 300;
-    color: #131313;
+    font-weight: normal;
+    color: #5ca4df;
   }
 
   a {

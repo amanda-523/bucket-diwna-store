@@ -1,4 +1,9 @@
 .page-details {
+  h5 {
+    font-weight: normal;
+    font-size: 18px;
+    color: #000;
+  }
   .store-gallery {
     margin-top: 20px;
 
@@ -15,5 +20,33 @@
         border: 2px solid #5ca4df;
       }
     }
+  }
+
+  .store-heading {
+    margin-bottom: 10px;
+
+    h1 {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+      color: #131313;
+      margin-bottom: 0px;
+    }
+
+    .price {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      color: #5ca4df;
+      margin-bottom: 10px;
+    }
+  }
+
+  .store-description {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    color: #666666;
+    margin-bottom: 0px;
   }
 }
