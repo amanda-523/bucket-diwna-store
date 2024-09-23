@@ -9501,11 +9501,20 @@ label {
 .page-auth .row-login {
   min-height: 70vh;
 }
-.page-auth .store-auth h2 {
+.page-auth .store-auth h1 {
   font-size: 28px;
-  font-weight: normal;
+  font-weight: 600;
   margin-top: 0;
+  color: #f5952f;
+}
+.page-auth .store-auth h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 20px;
   color: #131313;
+}
+.page-auth .store-auth p a {
+  color: #f5952f;
 }
 .page-auth .store-auth .btn-success {
   color: #212529;

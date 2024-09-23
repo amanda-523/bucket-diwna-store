@@ -4,12 +4,26 @@
   }
 
   .store-auth {
-    h2 {
+    h1 {
       font-size: 28px;
-      font-weight: normal;
+      font-weight: 600;
       margin-top: 0;
+      color: #f5952f;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+      margin-top: 20px;
       color: #131313;
     }
+
+    p {
+      a {
+        color: #f5952f;
+      }
+    }
+
     .btn-success {
       @include button-variant(#f5952f, transparent);
       color: #fff;
