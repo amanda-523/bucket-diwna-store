@@ -17,12 +17,12 @@
 
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark navbar-store fixed-top navbar-fixed-top"
+      class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
       data-aos="fade-down"
     >
       <div class="container">
-        <a href="/index.html" class="navbar-brand">
-          <img src="/images/logo.svg" alt="Logo" />
+        <a href="/home.html" class="navbar-brand">
+          <img src="/images/logo-new.svg" alt="Logo" class="img-logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -35,10 +35,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="/index.html" class="nav-link">Home</a>
+              <a href="/home.html" class="nav-link">Beranda</a>
             </li>
-            <li class="nav-item active">
-              <a href="/categories.html" class="nav-link">Categories</a>
+            <li class="nav-item">
+              <a href="/categories.html" class="nav-link">Kategori</a>
+            </li>
+            <li class="nav-item">
+              <a href="/products.html" class="nav-link">Produk</a>
             </li>
           </ul>
 
@@ -61,15 +64,18 @@
               </a>
               <div class="dropdown-menu">
                 <a href="/dashboard.html" class="dropdown-item"> Dashboard </a>
-                <a href="/settings.html" class="dropdown-item"> Settings </a>
+                <a href="/settings.html" class="dropdown-item"> Pengaturan </a>
                 <div class="dropdown-divider">
-                  <a href="/" class="dropdown-item"> Logout </a>
+                  <a href="/login.html" class="dropdown-item">
+                    Logout
+                    <img src="/icons/logout.svg" alt="" class="ml-2" />
+                  </a>
                 </div>
               </div>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link d-inline-block mt-2">
-                <img src="/icons/shopping-outline-white.svg" alt="Cart" />
+              <a href="/cart.html" class="nav-link d-inline-block mt-2">
+                <img src="/icons/shopping-outline-blue.svg" alt="Cart" />
               </a>
             </li>
           </ul>
@@ -79,7 +85,7 @@
               <a href="#" class="nav-link">Hi, Amanda</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link d-inline-block">Cart</a>
+              <a href="/cart.html" class="nav-link d-inline-block">Keranjang</a>
             </li>
           </ul>
         </div>
@@ -99,9 +105,9 @@
               <nav>
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="/index.html">Home</a>
+                    <a href="/home.html">Beranda</a>
                   </li>
-                  <li class="breadcrumb-item active">Product Details</li>
+                  <li class="breadcrumb-item active">Detail Produk</li>
                 </ol>
               </nav>
             </div>
@@ -150,15 +156,15 @@
         <section class="store-heading">
           <div class="container">
             <div class="row">
-              <div class="col-lg-8">
+              <div class="col-lg-7">
                 <h1>Bucket Bunga</h1>
                 <div class="price">Rp 30.000</div>
               </div>
-              <div class="col-lg-2" data-aos="zoom-in">
+              <div class="col-lg-3" data-aos="zoom-in">
                 <a
                   href="/cart.html"
                   class="btn btn-success px-4 text-white btn-block mb-3"
-                  >Add to Cart</a
+                  >Masuk Keranjang</a
                 >
               </div>
             </div>
@@ -203,7 +209,7 @@
           <div class="container">
             <div class="row">
               <div class="col-12 col-lg-8 mt-3 mb-3">
-                <h5>Customer Review (3)</h5>
+                <h5>Review Customer (3)</h5>
               </div>
             </div>
             <div class="row">

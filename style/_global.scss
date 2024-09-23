@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #c8e0f4;
 }
 
 .page-content {
@@ -7,15 +8,19 @@ body {
 }
 
 footer {
-  border-top: 1px solid #e4e4e4;
-  margin-top: 150px;
+  border-top: 1px solid #fff;
+  margin-top: 100px;
 
   p {
-    color: #9e9e9e;
+    color: #fff;
   }
+}
+
+label {
+  margin-top: 10px;
 }
 
 .form-control {
   background-color: #ffffff;
-  border-color: #9e9e9e;
+  border-color: #5ca4df;
 }

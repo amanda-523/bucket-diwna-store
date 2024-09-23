@@ -1,0 +1,18 @@
+.page-auth {
+  .row-login {
+    min-height: 70vh;
+  }
+
+  .store-auth {
+    h2 {
+      font-size: 28px;
+      font-weight: normal;
+      margin-top: 0;
+      color: #131313;
+    }
+    .btn-success {
+      @include button-variant(#f5952f, transparent);
+      color: #fff;
+    }
+  }
+}

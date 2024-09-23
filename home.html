@@ -17,12 +17,12 @@
 
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark navbar-store fixed-top navbar-fixed-top"
+      class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
       data-aos="fade-down"
     >
       <div class="container">
-        <a href="/index.html" class="navbar-brand">
-          <img src="/images/logo.svg" alt="Logo" />
+        <a href="/home.html" class="navbar-brand">
+          <img src="/images/logo-new.svg" alt="Logo" class="img-logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -35,20 +35,57 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a href="/index.html" class="nav-link">Home</a>
+              <a href="/home.html" class="nav-link">Beranda</a>
             </li>
             <li class="nav-item">
-              <a href="/categories.html" class="nav-link">Categories</a>
+              <a href="/categories.html" class="nav-link">Kategori</a>
             </li>
             <li class="nav-item">
-              <a href="/register.html" class="nav-link">Sign Up</a>
+              <a href="/products.html" class="nav-link">Produk</a>
             </li>
-            <li class="nav-item">
+          </ul>
+
+          <!-- Desktop Menu -->
+          <ul class="navbar-nav d-none d-lg-flex">
+            <li class="nav-item dropdown">
               <a
-                href="/login.html"
-                class="btn btn-success nav-link px-4 text-white"
-                >Login</a
+                href="#"
+                class="nav-link"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
               >
+                <img
+                  src="/images/ava AM.svg"
+                  alt="Profile"
+                  class="rounded-circle mr-2 profile-picture"
+                />
+                Hi, Amanda
+              </a>
+              <div class="dropdown-menu">
+                <a href="/dashboard.html" class="dropdown-item"> Dashboard </a>
+                <a href="/settings.html" class="dropdown-item"> Pengaturan </a>
+                <div class="dropdown-divider">
+                  <a href="/login.html" class="dropdown-item">
+                    Logout
+                    <img src="/icons/logout.svg" alt="" class="ml-2" />
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="/cart.html" class="nav-link d-inline-block mt-2">
+                <img src="/icons/shopping-outline-blue.svg" alt="Cart" />
+              </a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav d-block d-lg-none">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Hi, Amanda</a>
+            </li>
+            <li class="nav-item">
+              <a href="/cart.html" class="nav-link d-inline-block">Keranjang</a>
             </li>
           </ul>
         </div>
@@ -104,11 +141,20 @@
         </div>
       </section>
 
-      <section class="store-trend-categories">
+      <section class="store-categories">
         <div class="container">
           <div class="row">
             <div class="col-12" data-aos="fade-up">
-              <h5>Trend Categories</h5>
+              <h5>
+                <a href="/categories.html">
+                  Kategori
+                  <img
+                    src="/icons/chevron-right.svg"
+                    alt=""
+                    class="icon-right"
+                  />
+                </a>
+              </h5>
             </div>
           </div>
           <div class="row">
@@ -142,7 +188,7 @@
                     class="w-100"
                   />
                 </div>
-                <p class="categories-text">Flower</p>
+                <p class="categories-text">Bunga</p>
               </a>
             </div>
 
@@ -176,7 +222,7 @@
                     class="w-100"
                   />
                 </div>
-                <p class="categories-text">Money</p>
+                <p class="categories-text">Uang</p>
               </a>
             </div>
 
@@ -200,11 +246,20 @@
         </div>
       </section>
 
-      <section class="store-new-products">
+      <section class="store-products">
         <div class="container">
           <div class="row">
             <div class="col-12" data-aos="fade-up">
-              <h5>New Products</h5>
+              <h5>
+                <a href="/products.html">
+                  Produk
+                  <img
+                    src="/icons/chevron-right.svg"
+                    alt=""
+                    class="icon-right"
+                  />
+                </a>
+              </h5>
             </div>
           </div>
           <div class="row">
@@ -217,7 +272,9 @@
                 <div class="products-thumbnail">
                   <div
                     class="products-image"
-                    style="background-image: url('/images/bucket\ kosongan.svg')"
+                    style="
+                      background-image: url('/images/bucket\ kosongan.svg');
+                    "
                   ></div>
                 </div>
                 <div class="products-text">Bucket Kosongan</div>
@@ -287,11 +344,11 @@
                 <div class="products-thumbnail">
                   <div
                     class="products-image"
-                    style="background-image: url('/images/bucket\ custom.svg')"
+                    style="background-image: url('/images/bucket\ uang.svg')"
                   ></div>
                 </div>
-                <div class="products-text">Bucket Custom</div>
-                <div class="products-price">Rp 20.000</div>
+                <div class="products-text">Bucket Uang</div>
+                <div class="products-price">Rp 100.000</div>
               </a>
             </div>
           </div>
