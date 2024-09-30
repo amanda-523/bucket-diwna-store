@@ -9221,7 +9221,7 @@ label {
 .navbar-store {
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #fff !important;
+  background-color: #fff;
 }
 @media (max-width: 991.98px) {
   .navbar-store {
@@ -9232,39 +9232,46 @@ label {
   width: 60px;
   height: 60px;
 }
+.navbar-store .navbar-collapse .nav-item .nav-link:hover {
+  color: #5ca4df;
+}
+.navbar-store .navbar-collapse .nav-item .nav-link.active {
+  font-weight: 500;
+  color: #5ca4df;
+}
 @media (min-width: 992px) {
-  .navbar-store .nav-item .nav-link {
+  .navbar-store .navbar-collapse .nav-item .nav-link {
     margin-left: 10px;
     margin-right: 10px;
   }
 }
-.navbar-store .nav-item .btn-success {
+.navbar-store .navbar-collapse .nav-item .btn-success {
   color: #fff;
   background-color: #5ca4df;
   border-color: transparent;
 }
-.navbar-store .nav-item .btn-success:hover {
+.navbar-store .navbar-collapse .nav-item .btn-success:hover {
   color: #fff;
   background-color: #3c92d9;
   border-color: rgba(0, 0, 0, 0);
 }
-.navbar-store .nav-item .btn-success:focus, .navbar-store .nav-item .btn-success.focus {
+.navbar-store .navbar-collapse .nav-item .btn-success:focus, .navbar-store .navbar-collapse .nav-item .btn-success.focus {
   color: #fff;
   background-color: #3c92d9;
   border-color: rgba(0, 0, 0, 0);
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
-.navbar-store .nav-item .btn-success.disabled, .navbar-store .nav-item .btn-success:disabled {
+.navbar-store .navbar-collapse .nav-item .btn-success.disabled, .navbar-store .navbar-collapse .nav-item .btn-success:disabled {
   color: #fff;
   background-color: #5ca4df;
   border-color: transparent;
 }
-.navbar-store .nav-item .btn-success:not(:disabled):not(.disabled):active, .navbar-store .nav-item .btn-success:not(:disabled):not(.disabled).active, .show > .navbar-store .nav-item .btn-success.dropdown-toggle {
+.navbar-store .navbar-collapse .nav-item .btn-success:not(:disabled):not(.disabled):active, .navbar-store .navbar-collapse .nav-item .btn-success:not(:disabled):not(.disabled).active, .show > .navbar-store .navbar-collapse .nav-item .btn-success.dropdown-toggle {
   color: #fff;
   background-color: #318cd7;
   border-color: rgba(0, 0, 0, 0);
 }
-.navbar-store .nav-item .btn-success:not(:disabled):not(.disabled):active:focus, .navbar-store .nav-item .btn-success:not(:disabled):not(.disabled).active:focus, .show > .navbar-store .nav-item .btn-success.dropdown-toggle:focus {
+.navbar-store .navbar-collapse .nav-item .btn-success:not(:disabled):not(.disabled):active:focus, .navbar-store .navbar-collapse .nav-item .btn-success:not(:disabled):not(.disabled).active:focus, .show > .navbar-store .navbar-collapse .nav-item .btn-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 .navbar-store .profile-picture {
@@ -9299,6 +9306,9 @@ label {
 }
 .page-home .store-categories {
   margin-top: 30px;
+}
+.page-home .store-best-products {
+  margin-top: 10px;
 }
 .page-home .store-products {
   margin-top: 10px;
@@ -9545,6 +9555,243 @@ label {
 }
 .page-auth .store-auth .btn-success:not(:disabled):not(.disabled):active:focus, .page-auth .store-auth .btn-success:not(:disabled):not(.disabled).active:focus, .show > .page-auth .store-auth .btn-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+
+.page-account #page-content-wrapper {
+  background: #c8e0f4;
+  min-width: 100vw;
+}
+.page-account #sidebar-wrapper {
+  margin-top: 50px;
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+  background: #fff;
+}
+.page-account #sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+.page-account #sidebar-wrapper .list-group {
+  width: 15rem;
+}
+.page-account #wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+.page-account .navbar-store {
+  margin-top: 0;
+  background-color: #c8e0f4;
+  box-shadow: 0px 4px 5px #cacad1;
+}
+@media (min-width: 768px) {
+  .page-account .navbar-store {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.page-account .navbar-store #menu-toggle {
+  background: #5ca4df;
+}
+.page-account .list-group-item {
+  border: 0;
+  font-size: 16px;
+  color: #d6d6d6;
+}
+.page-account .list-group-item.active {
+  background: linear-gradient(270deg, rgb(200, 224, 244) 2%, rgb(92, 164, 223) 100%);
+  color: #fff;
+  border-right: 4px solid #5ca4df;
+}
+@media (min-width: 768px) {
+  .page-account #sidebar-wrapper {
+    margin-left: 0;
+    margin-top: 0px;
+  }
+  .page-account #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  .page-account #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+.page-account .section-content {
+  margin-top: 100px;
+}
+@media (min-width: 768px) {
+  .page-account .section-content {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.page-account .section-content .account-heading .account-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #131313;
+}
+.page-account .section-content .account-heading .account-subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  color: #4a4a4a;
+}
+.page-account .section-content .account-heading hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.page-account .section-content .account-content p {
+  margin-top: 0px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #4a4a4a;
+}
+.page-account .section-content .account-content label {
+  margin-top: 0px;
+}
+.page-account .section-content .account-content .btn-success {
+  color: #212529;
+  background-color: #f5952f;
+  border-color: transparent;
+  color: #fff;
+}
+.page-account .section-content .account-content .btn-success:hover {
+  color: #212529;
+  background-color: #f2820c;
+  border-color: rgba(0, 0, 0, 0);
+}
+.page-account .section-content .account-content .btn-success:focus, .page-account .section-content .account-content .btn-success.focus {
+  color: #212529;
+  background-color: #f2820c;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+.page-account .section-content .account-content .btn-success.disabled, .page-account .section-content .account-content .btn-success:disabled {
+  color: #212529;
+  background-color: #f5952f;
+  border-color: transparent;
+}
+.page-account .section-content .account-content .btn-success:not(:disabled):not(.disabled):active, .page-account .section-content .account-content .btn-success:not(:disabled):not(.disabled).active, .show > .page-account .section-content .account-content .btn-success.dropdown-toggle {
+  color: #fff;
+  background-color: #e67c0b;
+  border-color: rgba(0, 0, 0, 0);
+}
+.page-account .section-content .account-content .btn-success:not(:disabled):not(.disabled):active:focus, .page-account .section-content .account-content .btn-success:not(:disabled):not(.disabled).active:focus, .show > .page-account .section-content .account-content .btn-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+.page-account .section-content .account-content .btn-outline-secondary {
+  color: #f5952f;
+  border: 1px solid #f5952f;
+}
+.page-account .section-content .account-content .btn-outline-secondary:hover {
+  color: #212529;
+  background-color: #f5952f;
+  border-color: transparent;
+}
+.page-account .section-content .account-content .btn-outline-secondary:hover:hover {
+  color: #212529;
+  background-color: #f2820c;
+  border-color: rgba(0, 0, 0, 0);
+}
+.page-account .section-content .account-content .btn-outline-secondary:hover:focus, .page-account .section-content .account-content .btn-outline-secondary:hover.focus {
+  color: #212529;
+  background-color: #f2820c;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+.page-account .section-content .account-content .btn-outline-secondary:hover.disabled, .page-account .section-content .account-content .btn-outline-secondary:hover:disabled {
+  color: #212529;
+  background-color: #f5952f;
+  border-color: transparent;
+}
+.page-account .section-content .account-content .btn-outline-secondary:hover:not(:disabled):not(.disabled):active, .page-account .section-content .account-content .btn-outline-secondary:hover:not(:disabled):not(.disabled).active, .show > .page-account .section-content .account-content .btn-outline-secondary:hover.dropdown-toggle {
+  color: #fff;
+  background-color: #e67c0b;
+  border-color: rgba(0, 0, 0, 0);
+}
+.page-account .section-content .account-content .btn-outline-secondary:hover:not(:disabled):not(.disabled):active:focus, .page-account .section-content .account-content .btn-outline-secondary:hover:not(:disabled):not(.disabled).active:focus, .show > .page-account .section-content .account-content .btn-outline-secondary:hover.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+.page-account .section-content .account-content .table-order {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.page-account .section-content .account-content .table-order .order-image {
+  border-radius: 8px;
+  max-height: 85px;
+}
+.page-account .section-content .account-content .table-order .product-title {
+  font-size: 16px;
+  color: #131313;
+  margin-top: 15px;
+}
+.page-account .section-content .account-content .table-order .product-price {
+  font-size: 16px;
+  color: #f5952f;
+  margin-top: 0px;
+}
+.page-account .section-content .account-content .table-order .btn-info {
+  margin-top: 18px;
+  color: #212529;
+  background-color: #f5952f;
+  border-color: transparent;
+}
+.page-account .section-content .account-content .table-order .btn-info:hover {
+  color: #212529;
+  background-color: #f2820c;
+  border-color: rgba(0, 0, 0, 0);
+}
+.page-account .section-content .account-content .table-order .btn-info:focus, .page-account .section-content .account-content .table-order .btn-info.focus {
+  color: #212529;
+  background-color: #f2820c;
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+.page-account .section-content .account-content .table-order .btn-info.disabled, .page-account .section-content .account-content .table-order .btn-info:disabled {
+  color: #212529;
+  background-color: #f5952f;
+  border-color: transparent;
+}
+.page-account .section-content .account-content .table-order .btn-info:not(:disabled):not(.disabled):active, .page-account .section-content .account-content .table-order .btn-info:not(:disabled):not(.disabled).active, .show > .page-account .section-content .account-content .table-order .btn-info.dropdown-toggle {
+  color: #fff;
+  background-color: #e67c0b;
+  border-color: rgba(0, 0, 0, 0);
+}
+.page-account .section-content .account-content .table-order .btn-info:not(:disabled):not(.disabled):active:focus, .page-account .section-content .account-content .table-order .btn-info:not(:disabled):not(.disabled).active:focus, .show > .page-account .section-content .account-content .table-order .btn-info.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
+}
+.page-account .section-content .account-content .card-list {
+  text-decoration: none;
+}
+.page-account .section-content .account-content .card-list h2 {
+  font-size: 16px;
+  color: #131313;
+}
+.page-account .section-content .account-content .card-list p {
+  font-size: 14px;
+  color: #666;
+}
+.page-account .section-content .account-content .card-list img {
+  height: 25px;
+}
+.page-account .section-content .account-content .card-list .card-status {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #5ca4df;
+  border-radius: 10px 10px 0px 0px;
+}
+.page-account .section-content .account-content .card-list .card-item img {
+  border-radius: 8px;
+  height: 50px;
+}
+.page-account .section-content .account-content .card-list .card-price h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #131313;
+}
+.page-account .section-content .account-content .card-list .card-details p {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .store-breadcrumbs .breadcrumb {
