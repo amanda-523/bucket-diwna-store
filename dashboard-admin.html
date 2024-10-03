@@ -16,39 +16,43 @@
   </head>
 
   <body>
-    <div class="page-account">
+    <div class="page-dashboard-admin">
       <div class="d-flex" id="wrapper" data-aos="fade-right">
         <!-- Sidebar -->
         <div class="border-right" id="sidebar-wrapper">
           <div class="sidebar-heading text-center">
-            <img src="/images/logo-new.svg" alt="" class="my-4" />
+            <img src="/images/logo-admin.svg" alt="" class="my-4" />
           </div>
           <div class="list-group list-group-flush">
             <a
-              href="/index.html"
-              class="list-group-item list-group-item-action"
-              style="color: #5ca4df"
+              href="/dashboard-admin.html"
+              class="list-group-item list-group-item-action active"
             >
-              <img src="/icons/chevron-left-pr50.svg" alt="" />
-              Kembali ke Beranda
+              Dashboard
             </a>
             <a
-              href="/account.html"
+              href="/dashboard-products.html"
+              class="list-group-item list-group-item-action"
+            >
+              Produk Saya
+            </a>
+            <a
+              href="/dashboard-transaction.html"
+              class="list-group-item list-group-item-action"
+            >
+              Transaksi
+            </a>
+            <a
+              href="/dashboard-settings.html"
+              class="list-group-item list-group-item-action"
+            >
+              Pengaturan Toko
+            </a>
+            <a
+              href="/dashboard-dashboard.html"
               class="list-group-item list-group-item-action"
             >
               Akun Saya
-            </a>
-            <a
-              href="/account-address.html"
-              class="list-group-item list-group-item-action"
-            >
-              Alamat
-            </a>
-            <a
-              href="/account-orders.html"
-              class="list-group-item list-group-item-action active"
-            >
-              Pesanan
             </a>
             <a
               href="/login.html"
@@ -100,7 +104,7 @@
                       Hi, Amanda
                     </a>
                     <div class="dropdown-menu">
-                      <a href="/account.html" class="dropdown-item">
+                      <a href="/dashboard.html" class="dropdown-item">
                         Akun Saya
                       </a>
                       <a href="/settings.html" class="dropdown-item">
@@ -137,83 +141,79 @@
           </nav>
 
           <!-- Section Content -->
-          <div class="section-content section-account" data-aos="fade-up">
+          <div class="section-content section-dashboard" data-aos="fade-up">
             <div class="container-fluid">
-              <div class="account-heading">
-                <h2 class="account-title">Pesanan Saya</h2>
-                <h5 class="account-subtitle">Daftar Pesanan</h5>
+              <div class="dashboard-heading">
+                <h2 class="dashboard-title">Dashboard Admin</h2>
+                <p class="dashboard-subtitle">Look what you have made today!</p>
                 <hr />
               </div>
-              <div class="account-content">
+              <div class="dashboard-content">
                 <div class="row">
-                  <div class="col-12 table-responsive">
-                    <table class="table table-borderless table-order">
-                      <tbody>
-                        <tr>
-                          <td style="width: 5%">
-                            <img
-                              src="/images/bucket bunga.svg"
-                              alt=""
-                              class="order-image"
-                            />
-                          </td>
-                          <td style="width: 35%">
-                            <div class="product-title">Bucket Bunga</div>
-                            <div class="product-price">Rp 30.000</div>
-                          </td>
-                          <td style="width: 5%">
-                            <a
-                              href="/details-orders-done.html"
-                              class="btn btn-info"
-                            >
-                              Lihat Detail
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="width: 5%">
-                            <img
-                              src="/images/bucket snack coklat.svg"
-                              alt=""
-                              class="order-image"
-                            />
-                          </td>
-                          <td style="width: 35%">
-                            <div class="product-title">Bucket Snack</div>
-                            <div class="product-price">Rp 60.000</div>
-                          </td>
-                          <td style="width: 5%">
-                            <a
-                              href="/details-orders-done.html"
-                              class="btn btn-info"
-                            >
-                              Lihat Detail
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="width: 5%">
-                            <img
-                              src="/images/bucket wisuda.svg"
-                              alt=""
-                              class="order-image"
-                            />
-                          </td>
-                          <td style="width: 35%">
-                            <div class="product-title">Bucket Wisuda</div>
-                            <div class="product-price">Rp 80.000</div>
-                          </td>
-                          <td style="width: 5%">
-                            <a
-                              href="/details-orders-done.html"
-                              class="btn btn-info"
-                            >
-                              Lihat Detail
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <div class="col-md-4">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="dashboard-card-title">Customer</div>
+                        <div class="dashboard-card-subtitle">58</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="dashboard-card-title">Pendapatan</div>
+                        <div class="dashboard-card-subtitle">Rp 500.000</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-2">
+                      <div class="card-body">
+                        <div class="dashboard-card-title">Transaksi</div>
+                        <div class="dashboard-card-subtitle">200</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-12 mt-2">
+                    <h5 class="mb-3">Transaksi Terbaru</h5>
+                    <a
+                      href="/dashboard-transaction-details.html"
+                      class="card card-list d-block"
+                    >
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <img src="/images/bucket bunga.svg" alt="" />
+                          </div>
+                          <div class="col-md-4">Bucket Bunga</div>
+                          <div class="col-md-3">Haechan Lee</div>
+                          <div class="col-md-3">8 Juni 2025</div>
+                          <div class="col-md-1 d-none d-md-block">
+                            <img src="/icons/chevron-right-ne20.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="/dashboard-transaction-details.html"
+                      class="card card-list d-block"
+                    >
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-1">
+                            <img src="/images/bucket uang.svg" alt="" />
+                          </div>
+                          <div class="col-md-4">Bucket Uang</div>
+                          <div class="col-md-3">Jeno Lee</div>
+                          <div class="col-md-3">23 April 2025</div>
+                          <div class="col-md-1 d-none d-md-block">
+                            <img src="/icons/chevron-right-ne20.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -18,48 +18,6 @@
   <body>
     <div class="page-account">
       <div class="d-flex" data-aos="fade-right">
-        <!-- Sidebar -->
-        <div class="border-right" id="sidebar-wrapper">
-          <div class="sidebar-heading text-center">
-            <img src="/images/logo-new.svg" alt="" class="my-4" />
-          </div>
-          <div class="list-group list-group-flush">
-            <a
-              href="/index.html"
-              class="list-group-item list-group-item-action"
-              style="color: #5ca4df"
-            >
-              <img src="/icons/chevron-left-pr50.svg" alt="" />
-              Kembali ke Beranda
-            </a>
-            <a
-              href="/account.html"
-              class="list-group-item list-group-item-action"
-            >
-              Akun Saya
-            </a>
-            <a
-              href="/account-address.html"
-              class="list-group-item list-group-item-action"
-            >
-              Alamat
-            </a>
-            <a
-              href="/account-account.html"
-              class="list-group-item list-group-item-action"
-            >
-              Pesanan
-            </a>
-            <a
-              href="/login.html"
-              class="list-group-item list-group-item-action"
-            >
-              Logout
-              <img src="/icons/logout.svg" alt="" class="ml-2 icon-logout" />
-            </a>
-          </div>
-        </div>
-
         <!-- Page Content -->
         <div id="page-content-wrapper">
           <nav
@@ -146,37 +104,33 @@
               <div class="account-content">
                 <div class="row">
                   <div class="col-12">
-                    <div
-                      class="card card-list d-block"
-                      style="border-radius: 10px 10px 0px 0px"
-                    >
-                      <div class="card-body card-status">
+                    <div class="card card-list d-block">
+                      <div class="card-body card-status-orders">
                         <div class="row">
-                          <div class="col-md-12">Pesanan Selesai</div>
+                          <div class="col-md-12">Pesanan Terkirim</div>
                         </div>
                       </div>
                     </div>
-                    <a href="#" class="card card-list d-block">
-                      <div class="card-body card-information">
-                        <div class="row">
-                          <div class="col-auto mr-0">
-                            <img
-                              src="/icons/clipboard-text-outline.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col">
-                            <h2>Informasi Pengiriman</h2>
-                            <p>J&T: JNT0291283123</p>
-                          </div>
-                          <div class="col-auto">
-                            <img src="/icons/chevron-right-ne20.svg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
                     <div class="card card-list d-block">
-                      <div class="card-body card-address">
+                      <div class="card-body card-information-orders">
+                        <a href="#">
+                          <div class="row">
+                            <div class="col-auto mr-0">
+                              <img
+                                src="/icons/clipboard-text-outline.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="col">
+                              <h2>Informasi Pengiriman</h2>
+                              <p>J&T: JNT0291283123</p>
+                            </div>
+                            <div class="col-auto">
+                              <img src="/icons/chevron-right-ne20.svg" alt="" />
+                            </div>
+                          </div>
+                        </a>
+                        <hr />
                         <div class="row">
                           <div class="col-auto mr-0">
                             <img
@@ -193,27 +147,20 @@
                             </p>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="card card-list d-block mt-2">
-                      <div class="card-body card-item">
+                        <hr />
                         <div class="row">
                           <div class="col-auto mr-0">
                             <img src="/images/bucket bunga.svg" alt="" />
                           </div>
                           <div class="col">
-                            <h2>Bucket Bunga</h2>
-                            <p>Rp 30.000</p>
+                            <h2 class="account-card-title">Bucket Bunga</h2>
+                            <h5 class="account-card-subtitle">Rp 30.000</h5>
                           </div>
                           <div class="col-auto">
-                            <p>1x</p>
+                            <h5 class="account-card-subtitle">1x</h5>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="card card-list d-block">
-                      <div class="card-body card-price">
-                        <div class="row">
+                        <div class="row mt-3">
                           <div class="col">
                             <p>Subtotal</p>
                           </div>
@@ -237,17 +184,10 @@
                             <h3>Rp. 11.000</h3>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="card card-list d-block">
-                      <div class="card-body card-details">
+                        <hr />
                         <div class="row">
-                          <div class="col">
-                            <h2>No Pesanan</h2>
-                          </div>
-                          <div class="col-auto">
-                            <h2>2183189192BD</h2>
-                          </div>
+                          <div class="col"><h2>No Pesanan</h2></div>
+                          <div class="col-auto"><h2>2183189192BD</h2></div>
                         </div>
                         <div class="row">
                           <div class="col">
@@ -281,23 +221,14 @@
                             <p>5/08/2024</p>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="card-button">
-                      <div class="row text-center mt-2 mb-2">
-                        <div class="col-6">
-                          <a
-                            href="/details.html"
-                            class="btn btn-outline-secondary btn-block"
-                            >Beli Lagi</a
-                          >
-                        </div>
-                        <div class="col-6">
-                          <a
-                            href="/revieww.html"
-                            class="btn btn-success btn-block"
-                            >Lihat Review</a
-                          >
+                        <div class="row text-center mt-3">
+                          <div class="col-12">
+                            <a
+                              href="/details-orders-review.html"
+                              class="btn btn-success btn-block"
+                              >Pesanan Selesai</a
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -316,47 +247,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
-    <script>
-      $("#menu-toggle").click(function (e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-      });
-    </script>
-    <script src="/vendor/vue/vue.js"></script>
-    <script>
-      var gallery = new Vue({
-        el: "#gallery",
-        mounted() {
-          AOS.init();
-        },
-        data: {
-          activePhoto: 0,
-          photos: [
-            {
-              id: 1,
-              url: "/images/gallery-1.svg",
-            },
-            {
-              id: 2,
-              url: "/images/gallery-2.svg",
-            },
-            {
-              id: 3,
-              url: "/images/gallery-3.svg",
-            },
-            {
-              id: 4,
-              url: "/images/gallery-4.svg",
-            },
-          ],
-        },
-        methods: {
-          changeActive(id) {
-            this.activePhoto = id;
-          },
-        },
-      });
     </script>
   </body>
 </html>

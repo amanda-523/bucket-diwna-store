@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Store - Bucket Diwna</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="page-account">
+      <div class="d-flex" data-aos="fade-right">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <nav
+            class="navbar navbar-expand-lg navbar-light navbar-store fixed-top"
+            data-aos="fade-down"
+          >
+            <div class="container-fluid">
+              <button
+                class="btn btn-secondary d-md-none mr-auto mr-2"
+                id="menu-toggle"
+              >
+                &laquo; Menu
+              </button>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Desktop Menu -->
+                <ul class="navbar-nav d-none d-lg-flex ml-auto">
+                  <li class="nav-item dropdown">
+                    <a
+                      href="#"
+                      class="nav-link"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                    >
+                      <img
+                        src="/images/ava AM.svg"
+                        alt="Profile"
+                        class="rounded-circle mr-2 profile-picture"
+                      />
+                      Hi, Amanda
+                    </a>
+                    <div class="dropdown-menu">
+                      <a href="/account.html" class="dropdown-item">
+                        Akun Saya
+                      </a>
+                      <a href="/settings.html" class="dropdown-item">
+                        Pengaturan
+                      </a>
+                      <div class="dropdown-divider">
+                        <a href="/login.html" class="dropdown-item">
+                          Logout
+                          <img src="/icons/logout.svg" alt="" class="ml-2" />
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/cart.html" class="nav-link d-inline-block mt-2">
+                      <img src="/icons/shopping-outline-blue.svg" alt="Cart" />
+                      <div class="card-badge">3</div>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="navbar-nav d-block d-lg-none">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Hi, Amanda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/cart.html" class="nav-link d-inline-block">
+                      Keranjang
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Section Content -->
+          <div class="section-content section-account" data-aos="fade-up">
+            <div class="container-fluid">
+              <div class="account-heading">
+                <h2 class="account-title">Review</h2>
+                <h5 class="account-subtitle">
+                  Silakan berikan nilai dan ulasan terhadap pesanan Anda
+                </h5>
+                <hr />
+              </div>
+              <div class="store-breadcrumbs">
+                <div class="row">
+                  <div class="col-12">
+                    <nav>
+                      <ol class="breadcrumb">
+                        <a href="#" id="breadcrumb-link">
+                          <li class="breadcrumb-item active">
+                            <img
+                              src="/icons/chevron-left-sc50.svg"
+                              alt=""
+                              class="mr-3"
+                            />
+                            Kembali
+                          </li>
+                        </a>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="account-content">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card card-list d-block">
+                      <div class="card-body card-status-orders">
+                        <div class="row">
+                          <div class="col-md-12">Review Produk</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card card-list d-block">
+                      <div class="card-body card-information-orders">
+                        <div class="row">
+                          <div class="col-auto">
+                            <img src="/images/bucket bunga.svg" alt="" />
+                          </div>
+                          <div class="col">
+                            <h2 class="account-card-title">Bucket Bunga</h2>
+                            <h5 class="account-card-subtitle">Rp 30.000</h5>
+                          </div>
+                          <div class="col-auto">
+                            <h5 class="account-card-subtitle">1x</h5>
+                          </div>
+                        </div>
+                        <hr />
+                        <div class="review-container">
+                          <form
+                            id="review-form"
+                            action="/details-orders-done.html"
+                          >
+                            <div class="form-group">
+                              <div class="star-rating">
+                                <i
+                                  class="fas fa-star"
+                                  id="star-1"
+                                  onclick="setRating(1)"
+                                ></i>
+                                <i
+                                  class="fas fa-star"
+                                  id="star-2"
+                                  onclick="setRating(2)"
+                                ></i>
+                                <i
+                                  class="fas fa-star"
+                                  id="star-3"
+                                  onclick="setRating(3)"
+                                ></i>
+                                <i
+                                  class="fas fa-star"
+                                  id="star-4"
+                                  onclick="setRating(4)"
+                                ></i>
+                                <i
+                                  class="fas fa-star"
+                                  id="star-5"
+                                  onclick="setRating(5)"
+                                ></i>
+                                <input
+                                  type="hidden"
+                                  id="rating"
+                                  name="rating"
+                                  value="0"
+                                />
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <textarea
+                                id="review-text"
+                                name="review-text"
+                                rows="5"
+                                cols="50"
+                                placeholder="Tulis komentar disini"
+                              ></textarea>
+                            </div>
+                            <button
+                              type="submit"
+                              class="btn btn-primary btn-block"
+                            >
+                              Kirim Ulasan
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay Element -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Toast Element -->
+    <div
+      class="toast"
+      id="toast-message"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="toast-body">
+        Apakah Anda yakin ingin keluar dari halaman ini?
+        <div class="mt-2 pt-2 border-top">
+          <button
+            type="button"
+            class="btn btn-secondary btn-sm"
+            data-bs-dismiss="toast"
+            onclick="console.log('Tombol Tidak diklik')"
+          >
+            Tidak
+          </button>
+          <a
+            href="/details-orders-review.html"
+            type="button"
+            class="btn btn-primary btn-sm"
+          >
+            Ya
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      document
+        .getElementById("breadcrumb-link")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          var toastElement = new bootstrap.Toast(
+            document.getElementById("toast-message"),
+            {
+              autohide: false,
+            }
+          );
+          document.getElementById("overlay").classList.add("show");
+          toastElement.show();
+
+          toastElement._element.addEventListener(
+            "hidden.bs.toast",
+            function () {
+              document.getElementById("overlay").classList.remove("show");
+            }
+          );
+        });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

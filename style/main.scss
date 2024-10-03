@@ -1,5 +1,6 @@
 // Import Bootstrap 4 Library
 @import "../vendor/bootstrap/scss/bootstrap.scss";
+@import url("https://kit.fontawesome.com/a076d05399.css");
 
 @import "global";
 @import "fonts";
@@ -11,9 +12,16 @@
 @import "pages/success";
 @import "pages/auth";
 @import "pages/account";
+@import "pages/dashboard";
+@import "pages/review";
 
 @import "components/breadcrumbs";
 @import "components/categories";
 @import "components/products";
+@import "components/card";
+@import "components/card-list";
+@import "components/toast";
+@import "components/overlay";
+@import "components/rating";
 
 @import "transitions/slide-fade";

@@ -5,6 +5,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://kit.fontawesome.com/a076d05399.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 :root {
   --blue: #007bff;
@@ -9400,6 +9401,16 @@ label {
   font-size: 16px;
   color: #131313;
 }
+.page-details .store-review .media .media-body p {
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 14px;
+  color: #131313;
+}
+.page-details .store-review .media .media-body .rating-text {
+  font-size: 14px;
+  color: #f5952f;
+}
 
 .store-cart h2 {
   font-weight: 600;
@@ -9759,41 +9770,95 @@ label {
 .page-account .section-content .account-content .table-order .btn-info:not(:disabled):not(.disabled):active:focus, .page-account .section-content .account-content .table-order .btn-info:not(:disabled):not(.disabled).active:focus, .show > .page-account .section-content .account-content .table-order .btn-info.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5);
 }
-.page-account .section-content .account-content .card-list {
-  text-decoration: none;
+
+.page-dashboard-admin #page-content-wrapper {
+  background: #c8e0f4;
+  min-width: 100vw;
 }
-.page-account .section-content .account-content .card-list h2 {
+.page-dashboard-admin #sidebar-wrapper {
+  margin-top: 50px;
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+  background-color: #fff;
+}
+.page-dashboard-admin #sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+.page-dashboard-admin #sidebar-wrapper .list-group {
+  width: 15rem;
+}
+.page-dashboard-admin #wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+.page-dashboard-admin .navbar-store {
+  margin-top: 0;
+  background-color: #c8e0f4;
+  box-shadow: 0px 4px 5px #cacad1;
+}
+@media (min-width: 768px) {
+  .page-dashboard-admin .navbar-store {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.page-dashboard-admin #menu-toggle {
+  background: #5ca4df;
+  border: #c8e0f4;
+}
+.page-dashboard-admin .list-group-item {
+  border: 0;
   font-size: 16px;
-  color: #131313;
+  color: #d6d6d6;
 }
-.page-account .section-content .account-content .card-list p {
-  font-size: 14px;
-  color: #666;
+.page-dashboard-admin .list-group-item.active {
+  background: linear-gradient(270deg, rgb(200, 224, 244) 2%, rgb(92, 164, 223) 100%);
+  border-right: 4px solid #5ca4df;
+  color: #fff;
 }
-.page-account .section-content .account-content .card-list img {
-  height: 25px;
+@media (min-width: 768px) {
+  .page-dashboard-admin #sidebar-wrapper {
+    margin-left: 0;
+    margin-top: 0px;
+  }
+  .page-dashboard-admin #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  .page-dashboard-admin #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
 }
-.page-account .section-content .account-content .card-list .card-status {
+.page-dashboard-admin .section-content {
+  margin-top: 100px;
+}
+@media (min-width: 768px) {
+  .page-dashboard-admin .section-content {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.page-dashboard-admin .section-content h5 {
   font-size: 18px;
   font-weight: 500;
-  color: #fff;
-  background-color: #5ca4df;
-  border-radius: 10px 10px 0px 0px;
-}
-.page-account .section-content .account-content .card-list .card-item img {
-  border-radius: 8px;
-  height: 50px;
-}
-.page-account .section-content .account-content .card-list .card-price h3 {
-  font-size: 14px;
-  font-weight: 600;
   color: #131313;
 }
-.page-account .section-content .account-content .card-list .card-details p {
-  margin-top: 2px;
-  margin-bottom: 2px;
+.page-dashboard-admin .section-content .dashboard-heading .dashboard-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #131313;
 }
-
+.page-dashboard-admin .section-content .dashboard-heading .dashboard-subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  color: #4a4a4a;
+}
+.page-dashboard-admin .section-content .dashboard-heading hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .store-breadcrumbs .breadcrumb {
   background: transparent;
   padding: 0;
@@ -9801,9 +9866,8 @@ label {
   padding-bottom: 10px;
 }
 .store-breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  color: #f5952f;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .store-breadcrumbs .breadcrumb-item.active {
   font-weight: normal;
@@ -9811,6 +9875,10 @@ label {
 }
 .store-breadcrumbs a {
   color: #666666;
+  text-decoration: none;
+}
+.store-breadcrumbs a:hover {
+  color: #f5952f;
 }
 
 .component-categories {
@@ -9868,6 +9936,170 @@ label {
   font-weight: 500;
   font-size: 16px;
   color: #f5952f;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0px 4px 15px #d6d6d6;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none !important;
+}
+.card .dashboard-card-title {
+  font-size: 14px;
+  font-weight: normal;
+  color: #4a4a4a;
+}
+.card .dashboard-card-subtitle {
+  font-size: 32px;
+  font-weight: 600;
+  color: #131313;
+}
+
+.card-list {
+  margin-bottom: 10px;
+}
+.card-list img {
+  max-height: 80px;
+  border-radius: 8px;
+}
+.card-list hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #666;
+}
+.card-list h2 {
+  font-size: 16px;
+  color: #131313;
+}
+.card-list h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #131313;
+}
+.card-list p {
+  font-size: 14px;
+  color: #666;
+}
+.card-list .account-card-title {
+  font-size: 16px;
+  color: #131313;
+}
+.card-list .account-card-subtitle {
+  font-size: 14px;
+  font-weight: normal;
+  color: #4a4a4a;
+}
+.card-list .card-status-orders {
+  margin-bottom: 0px;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #5ca4df;
+  border-radius: 10px 10px 0px 0px;
+}
+.card-list .card-information-orders a {
+  text-decoration: none;
+}
+.card-list .card-information-orders p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1050;
+  width: 500px;
+  min-height: 100px;
+  background-color: #fff;
+  border: 1px solid #f5952f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.toast.show {
+  opacity: 1;
+}
+.toast .toast-body {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #131313;
+}
+.toast .toast-body .btn {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8rem;
+}
+.toast .toast-body .btn:first-child {
+  margin-right: 0.5rem;
+}
+.toast .toast-body .btn-primary {
+  background-color: #f5952f;
+  border-color: #f5952f;
+}
+.toast .toast-body .btn-primary:hover {
+  background-color: #f48917;
+  border-color: #f48917;
+}
+.toast .toast-body .btn-secondary {
+  background-color: #fff;
+  border-color: #f5952f;
+  color: #f5952f;
+}
+.toast .toast-body .btn-secondary:hover {
+  background-color: #f48917;
+  border-color: #f48917;
+  color: #fff;
+}
+
+.overlay {
+  position: fixed; /* Menempatkan overlay di posisi tetap */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang hitam dengan transparansi */
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px); /* Efek blur */
+  z-index: 1040; /* Pastikan overlay berada di bawah toast */
+  display: none; /* Sembunyikan overlay secara default */
+}
+
+.toast.show {
+  z-index: 1050; /* Toast berada di atas overlay */
+}
+
+.overlay.show {
+  display: block; /* Tampilkan overlay saat toast ditampilkan */
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.rating .star-rating {
+  font-size: 24px;
+  color: #ffd700;
+}
+.rating .star-rating i {
+  margin-right: 5px;
+}
+.rating .star-rating i.checked {
+  color: #ffd700;
+}
+.rating .star-rating i:not(.checked) {
+  color: #ccc;
+}
+.rating .rating-text {
+  font-size: 18px;
+  color: #666;
+  margin-left: 10px;
 }
 
 .slide-fade-enter-active {
