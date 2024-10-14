@@ -16,39 +16,43 @@
   </head>
 
   <body>
-    <div class="page-account">
+    <div class="page-dashboard">
       <div class="d-flex" id="wrapper" data-aos="fade-right">
         <!-- Sidebar -->
         <div class="border-right" id="sidebar-wrapper">
           <div class="sidebar-heading text-center">
-            <img src="/images/logo-new.svg" alt="" class="my-4" />
+            <img src="/images/logo-admin.svg" alt="" class="my-4" />
           </div>
           <div class="list-group list-group-flush">
             <a
-              href="/index.html"
-              class="list-group-item list-group-item-action"
-              style="color: #5ca4df"
-            >
-              <img src="/icons/chevron-left-pr50.svg" alt="" />
-              Kembali ke Beranda
-            </a>
-            <a
-              href="/account.html"
+              href="/dashboard.html"
               class="list-group-item list-group-item-action"
             >
-              Akun Saya
+              Dashboard
             </a>
             <a
-              href="/account-address.html"
-              class="list-group-item list-group-item-action"
-            >
-              Alamat
-            </a>
-            <a
-              href="/account-orders.html"
+              href="/dashboard-products.html"
               class="list-group-item list-group-item-action active"
             >
-              Pesanan
+              Produk Saya
+            </a>
+            <a
+              href="/dashboard-transactions.html"
+              class="list-group-item list-group-item-action"
+            >
+              Transaksi
+            </a>
+            <a
+              href="/dashboard-settings.html"
+              class="list-group-item list-group-item-action"
+            >
+              Pengaturan Toko
+            </a>
+            <a
+              href="/dashboard-account.html"
+              class="list-group-item list-group-item-action"
+            >
+              Akun Toko
             </a>
             <a
               href="/login.html"
@@ -100,7 +104,7 @@
                       Hi, Amanda
                     </a>
                     <div class="dropdown-menu">
-                      <a href="/account.html" class="dropdown-item">
+                      <a href="/dashboard.html" class="dropdown-item">
                         Akun Saya
                       </a>
                       <a href="/settings.html" class="dropdown-item">
@@ -137,56 +141,41 @@
           </nav>
 
           <!-- Section Content -->
-          <div class="section-content section-account" data-aos="fade-up">
+          <div class="section-content section-dashboard" data-aos="fade-up">
             <div class="container-fluid">
-              <div class="account-heading">
-                <h2 class="account-title">Pesanan Saya</h2>
-                <h5 class="account-subtitle">Daftar Pesanan</h5>
+              <div class="dashboard-heading">
+                <h2 class="dashboard-title">Produk Saya</h2>
+                <p class="dashboard-subtitle">
+                  Kelola dengan baik dan dapatkan uang
+                </p>
                 <hr />
               </div>
-              <div class="account-content">
+              <div class="dashboard-content">
                 <div class="row">
                   <div class="col-12">
-                    <div class="card-account card-list d-block">
-                      <div class="card-body">
-                        <div class="row align-items-center">
-                          <div class="col-md-1">
-                            <img src="/images/bucket bunga.svg" alt="" />
-                          </div>
-                          <div class="col-md-4">Bucket Bunga</div>
-                          <div class="col-md-3">Rp 30.000</div>
-                          <div class="col-md-4 text-right">
-                            <a
-                              href="/details-orders-done.html"
-                              class="btn btn-success"
-                            >
-                              Lihat Detail
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <a
+                      href="/dashboard-products-create.html"
+                      class="btn btn-success"
+                      >Tambah Produk Baru</a
+                    >
                   </div>
-                  <div class="col-md-12">
-                    <div class="card-account card-list d-block">
+                </div>
+                <div class="row mt-4">
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a
+                      href="/dashboard-products-details.html"
+                      class="card-dashboard card-dashboard-product d-block"
+                    >
                       <div class="card-body">
-                        <div class="row align-items-center">
-                          <div class="col-md-1">
-                            <img src="/images/bucket bunga.svg" alt="" />
-                          </div>
-                          <div class="col-md-4">Bucket Bunga</div>
-                          <div class="col-md-3">Rp 30.000</div>
-                          <div class="col-md-4 text-right">
-                            <a
-                              href="/details-orders-done.html"
-                              class="btn btn-success"
-                            >
-                              Lihat Detail
-                            </a>
-                          </div>
-                        </div>
+                        <img
+                          src="/images/bucket bunga.svg"
+                          alt=""
+                          class="w-100 mb-2"
+                        />
+                        <div class="product-title">Bucket Bunga</div>
+                        <div class="product-category">Bunga</div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>

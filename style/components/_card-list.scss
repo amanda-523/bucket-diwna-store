@@ -2,30 +2,18 @@
   margin-bottom: 10px;
 
   img {
-    max-height: 80px;
+    max-width: 50px;
     border-radius: 8px;
   }
 
-  hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #666;
-  }
-
-  h2 {
+  .card-body {
     font-size: 16px;
+    font-weight: normal;
     color: #131313;
-  }
 
-  h3 {
-    font-size: 14px;
-    font-weight: 600;
-    color: #131313;
-  }
-
-  p {
-    font-size: 14px;
-    color: #666;
+    .row {
+      justify-content: center;
+    }
   }
 
   .account-card-title {

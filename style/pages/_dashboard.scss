@@ -1,4 +1,4 @@
-.page-dashboard-admin {
+.page-dashboard {
   #page-content-wrapper {
     background: #c8e0f4;
     min-width: 100vw;
@@ -94,28 +94,102 @@
       font-size: 18px;
       font-weight: 500;
       color: #131313;
+      margin-bottom: 20px;
     }
 
-    .dashboard-heading {
-      .dashboard-title {
-        font-size: 24px;
-        font-weight: 500;
-        color: #131313;
-      }
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
 
-      .dashboard-subtitle {
+  img {
+    border-radius: 8px;
+  }
+
+  .dashboard-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #131313;
+  }
+
+  .dashboard-subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    color: #4a4a4a;
+  }
+
+  .product-title {
+    font-size: 14px;
+    font-weight: normal;
+    color: #bababa;
+  }
+
+  .product-subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    color: #131313;
+    margin-bottom: 20px;
+  }
+
+  .nav-pills {
+    .nav-link {
+      font-size: 16px;
+      font-weight: normal;
+      color: #4a4a4a;
+      border-radius: 0;
+
+      &.active {
         font-size: 16px;
-        font-weight: normal;
-        color: #4a4a4a;
-      }
-
-      hr {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        font-weight: 500;
+        color: #f5952f;
+        border-bottom: 2px solid #f5952f;
+        background: none;
       }
     }
+  }
 
-    .dashboard-content {
+  .form-group {
+    p {
+      margin-bottom: 0;
+    }
+
+    .custom-radio {
+      margin-top: 5px;
+    }
+
+    .text-muted {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  }
+
+  .btn-success {
+    @include button-variant(#f5952f, transparent);
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .gallery-container {
+    .delete-gallery {
+      display: block;
+      position: absolute;
+      top: -10px;
+      right: 0;
+    }
+  }
+
+  template {
+    .btn-success {
+      @include button-variant(#f5952f, transparent);
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }

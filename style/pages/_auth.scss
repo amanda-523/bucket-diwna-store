@@ -27,6 +27,10 @@
     .btn-success {
       @include button-variant(#f5952f, transparent);
       color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }

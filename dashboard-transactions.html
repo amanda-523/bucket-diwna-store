@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <div class="page-dashboard-admin">
+    <div class="page-dashboard">
       <div class="d-flex" id="wrapper" data-aos="fade-right">
         <!-- Sidebar -->
         <div class="border-right" id="sidebar-wrapper">
@@ -25,8 +25,8 @@
           </div>
           <div class="list-group list-group-flush">
             <a
-              href="/dashboard-admin.html"
-              class="list-group-item list-group-item-action active"
+              href="/dashboard.html"
+              class="list-group-item list-group-item-action"
             >
               Dashboard
             </a>
@@ -37,8 +37,8 @@
               Produk Saya
             </a>
             <a
-              href="/dashboard-transaction.html"
-              class="list-group-item list-group-item-action"
+              href="/dashboard-transactions.html"
+              class="list-group-item list-group-item-action active"
             >
               Transaksi
             </a>
@@ -49,10 +49,10 @@
               Pengaturan Toko
             </a>
             <a
-              href="/dashboard-dashboard.html"
+              href="/dashboard-account.html"
               class="list-group-item list-group-item-action"
             >
-              Akun Saya
+              Akun Toko
             </a>
             <a
               href="/login.html"
@@ -144,76 +144,126 @@
           <div class="section-content section-dashboard" data-aos="fade-up">
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Dashboard Admin</h2>
-                <p class="dashboard-subtitle">Look what you have made today!</p>
+                <h2 class="dashboard-title">Transaksi</h2>
+                <p class="dashboard-subtitle">
+                  Lihat transaksi yang Anda lakukan hari ini!
+                </p>
                 <hr />
               </div>
               <div class="dashboard-content">
                 <div class="row">
-                  <div class="col-md-4">
-                    <div class="card mb-2">
-                      <div class="card-body">
-                        <div class="dashboard-card-title">Customer</div>
-                        <div class="dashboard-card-subtitle">58</div>
+                  <div class="col-12">
+                    <ul class="nav nav-pills mb-3" id="pills-tab">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link active"
+                          id="pills-home-tab"
+                          data-toggle="pill"
+                          href="#pills-home"
+                          role="tab"
+                          aria-controls="pills-home"
+                          aria-selected="true"
+                          >Sell Product</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          id="pills-profile-tab"
+                          data-toggle="pill"
+                          href="#pills-profile"
+                          role="tab"
+                          aria-controls="pills-profile"
+                          aria-selected="false"
+                          >Buy Product</a
+                        >
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="pills-home"
+                        role="tabpanel"
+                        aria-labelledby="pills-home-tab"
+                      >
+                        <a
+                          href="/dashboard-transaction-details.html"
+                          class="card-dashboard card-list d-block"
+                        >
+                          <div class="card-body">
+                            <div
+                              class="row align-items-center justify-content-center"
+                            >
+                              <div class="col-md-1">
+                                <img src="/images/bucket bunga.svg" alt="" />
+                              </div>
+                              <div class="col-md-4">Rp. 30.000</div>
+                              <div class="col-md-3">Bucket Bunga</div>
+                              <div class="col-md-3">8 Juni 2025</div>
+                              <div class="col-md-1 d-none d-md-block">
+                                <img
+                                  src="/icons/chevron-right-ne20.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        <a
+                          href="/dashboard-transaction-details.html"
+                          class="card-dashboard card-list d-block"
+                        >
+                          <div class="card-body">
+                            <div
+                              class="row align-items-center justify-content-center"
+                            >
+                              <div class="col-md-1">
+                                <img src="/images/bucket uang.svg" alt="" />
+                              </div>
+                              <div class="col-md-4">Rp. 100.000</div>
+                              <div class="col-md-3">Bucket Uang</div>
+                              <div class="col-md-3">23 April 2025</div>
+                              <div class="col-md-1 d-none d-md-block">
+                                <img
+                                  src="/icons/chevron-right-ne20.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="pills-profile"
+                        role="tabpanel"
+                        aria-labelledby="pills-profile-tab"
+                      >
+                        <a
+                          href="/dashboard-transaction-details.html"
+                          class="card-dashboard card-list d-block"
+                        >
+                          <div class="card-body">
+                            <div
+                              class="row align-items-center justify-content-center"
+                            >
+                              <div class="col-md-1">
+                                <img src="/images/bucket uang.svg" alt="" />
+                              </div>
+                              <div class="col-md-4">Rp. 100.000</div>
+                              <div class="col-md-3">Bucket Uang</div>
+                              <div class="col-md-3">23 April 2025</div>
+                              <div class="col-md-1 d-none d-md-block">
+                                <img
+                                  src="/icons/chevron-right-ne20.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </a>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card mb-2">
-                      <div class="card-body">
-                        <div class="dashboard-card-title">Pendapatan</div>
-                        <div class="dashboard-card-subtitle">Rp 500.000</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card mb-2">
-                      <div class="card-body">
-                        <div class="dashboard-card-title">Transaksi</div>
-                        <div class="dashboard-card-subtitle">200</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-3">
-                  <div class="col-12 mt-2">
-                    <h5 class="mb-3">Transaksi Terbaru</h5>
-                    <a
-                      href="/dashboard-transaction-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <img src="/images/bucket bunga.svg" alt="" />
-                          </div>
-                          <div class="col-md-4">Bucket Bunga</div>
-                          <div class="col-md-3">Haechan Lee</div>
-                          <div class="col-md-3">8 Juni 2025</div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img src="/icons/chevron-right-ne20.svg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      href="/dashboard-transaction-details.html"
-                      class="card card-list d-block"
-                    >
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <img src="/images/bucket uang.svg" alt="" />
-                          </div>
-                          <div class="col-md-4">Bucket Uang</div>
-                          <div class="col-md-3">Jeno Lee</div>
-                          <div class="col-md-3">23 April 2025</div>
-                          <div class="col-md-1 d-none d-md-block">
-                            <img src="/icons/chevron-right-ne20.svg" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
                   </div>
                 </div>
               </div>

@@ -13,15 +13,15 @@
 @import "pages/auth";
 @import "pages/account";
 @import "pages/dashboard";
-@import "pages/review";
+@import "pages/orders";
 
 @import "components/breadcrumbs";
 @import "components/categories";
 @import "components/products";
-@import "components/card";
+@import "components/card-account";
 @import "components/card-list";
-@import "components/toast";
-@import "components/overlay";
+@import "components/card-dashboard";
 @import "components/rating";
+@import "components/review";
 
 @import "transitions/slide-fade";

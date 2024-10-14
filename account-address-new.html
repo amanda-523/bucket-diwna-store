@@ -40,13 +40,13 @@
             </a>
             <a
               href="/account-address.html"
-              class="list-group-item list-group-item-action"
+              class="list-group-item list-group-item-action active"
             >
               Alamat
             </a>
             <a
               href="/account-orders.html"
-              class="list-group-item list-group-item-action active"
+              class="list-group-item list-group-item-action"
             >
               Pesanan
             </a>
@@ -140,147 +140,133 @@
           <div class="section-content section-account" data-aos="fade-up">
             <div class="container-fluid">
               <div class="account-heading">
-                <h2 class="account-title">Pesanan Saya</h2>
-                <h5 class="account-subtitle">Details Pesanan</h5>
+                <h2 class="account-title">Alamat</h2>
+                <h5 class="account-subtitle">
+                  Tambahkan alamat pengiriman untuk pesanan Anda
+                </h5>
                 <hr />
               </div>
               <div class="account-content">
-                <a href="/account-orders.html" class="nav-back">
+                <a href="/account-address.html" class="nav-back">
                   <img src="/icons/chevron-left-sc50.svg" alt="" />
                   Kembali
                 </a>
-                <div class="row">
-                  <div class="col-12 mt-4">
-                    <div class="card-account card-list d-block">
-                      <div class="card-body card-status-orders">
-                        <div class="row">
-                          <div class="col-md-12">Pesanan Diproses</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-account card-list d-block">
-                      <div class="card-body card-information-orders">
-                        <a href="#">
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <form action="" class="">
+                      <div class="card-account">
+                        <div class="card-body">
                           <div class="row">
-                            <div class="col-1">
-                              <img
-                                src="/icons/clipboard-text-outline.svg"
-                                alt=""
-                              />
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="fullName">Nama Lengkap</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="fullName"
+                                  name="fullName"
+                                  placeholder="Amanda S. Sudrajat"
+                                />
+                              </div>
                             </div>
-                            <div class="col-10">
-                              <h2>Informasi Pengiriman</h2>
-                              <p>J&T: JNT0291283123</p>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="email">Email</label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="email"
+                                  name="email"
+                                  placeholder="amandasdrjt523@gmail.com"
+                                />
+                              </div>
                             </div>
-                            <div class="col-1">
-                              <img src="/icons/chevron-right-ne20.svg" alt="" />
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="address">Alamat Lengkap</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="address"
+                                  name="address"
+                                  placeholder="Psr. Hartana no 69"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="province">Provinsi</label>
+                                <select
+                                  name="province"
+                                  id="province"
+                                  class="form-control"
+                                >
+                                  <option value="Jawa Barat">Jawa Barat</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="city">Kota</label>
+                                <select
+                                  name="city"
+                                  id="city"
+                                  class="form-control"
+                                >
+                                  <option value="Cikampek">Cikampek</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="postalCode">Kode Pos</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="postalCode"
+                                  name="postalCode"
+                                  placeholder="44262"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="country">Negara</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="country"
+                                  name="country"
+                                  placeholder="Indonesia"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="phoneNumber">No. HP</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="phoneNumber"
+                                  name="phoneNumber"
+                                  placeholder="08136418892"
+                                />
+                              </div>
                             </div>
                           </div>
-                        </a>
-                        <hr />
-                        <div class="row">
-                          <div class="col-1">
-                            <img
-                              src="/icons/map-marker-radius-outline.svg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-11">
-                            <h2>Alamat Pengiriman</h2>
-                            <p>
-                              Amanda Saphira Sudrajat <br />
-                              081387900589 <br />
-                              Psr. Hartana no 69, Cikampek 44262
-                            </p>
-                          </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                          <div class="col-1">
-                            <img src="/images/bucket bunga.svg" alt="" />
-                          </div>
-                          <div class="col-10">
-                            <h2 class="orders-card-title">Bucket Bunga</h2>
-                            <h5 class="orders-card-subtitle">Rp 30.000</h5>
-                          </div>
-                          <div class="col-1">
-                            <h5 class="orders-card-subtitle">1x</h5>
-                          </div>
-                        </div>
-                        <div class="row mt-3">
-                          <div class="col-6">
-                            <p>Subtotal</p>
-                          </div>
-                          <div class="col-6 text-right">
-                            <p>Rp. 30.000</p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6">
-                            <p>Pengiriman</p>
-                          </div>
-                          <div class="col-6 text-right">
-                            <p>Rp. 15.000</p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6">
-                            <h3>Total</h3>
-                          </div>
-                          <div class="col-6 text-right">
-                            <h3>Rp. 11.000</h3>
-                          </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                          <div class="col-6"><h2>No Pesanan</h2></div>
-                          <div class="col-6 text-right">
-                            <h2>2183189192BD</h2>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6">
-                            <p>Metode Pembayaran</p>
-                          </div>
-                          <div class="col-6 text-right">
-                            <p>Transfer Bank (BRI)</p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6">
-                            <p>Waktu Pemesanan</p>
-                          </div>
-                          <div class="col-6 text-right">
-                            <p>4/08/2024</p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6">
-                            <p>Waktu Pembayaran</p>
-                          </div>
-                          <div class="col-6 text-right">
-                            <p>4/08/2024</p>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6">
-                            <p>Waktu Pengiriman</p>
-                          </div>
-                          <div class="col-6 text-right">
-                            <p>5/08/2024</p>
-                          </div>
-                        </div>
-                        <div class="row text-center mt-3">
-                          <div class="col-12">
-                            <a
-                              class="btn btn-success btn-block disabled"
-                              aria-disabled="true"
-                              >Pesanan Selesai</a
-                            >
+                          <div class="row">
+                            <div class="col text-right">
+                              <button
+                                type="submit"
+                                class="btn btn-success px-5"
+                              >
+                                Simpan
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </form>
                   </div>
                 </div>
               </div>

@@ -17,7 +17,49 @@
 
   <body>
     <div class="page-account">
-      <div class="d-flex" data-aos="fade-right">
+      <div class="d-flex" id="wrapper" data-aos="fade-right">
+        <!-- Sidebar -->
+        <div class="border-right" id="sidebar-wrapper">
+          <div class="sidebar-heading text-center">
+            <img src="/images/logo-new.svg" alt="" class="my-4" />
+          </div>
+          <div class="list-group list-group-flush">
+            <a
+              href="/index.html"
+              class="list-group-item list-group-item-action"
+              style="color: #5ca4df"
+            >
+              <img src="/icons/chevron-left-pr50.svg" alt="" />
+              Kembali ke Beranda
+            </a>
+            <a
+              href="/account.html"
+              class="list-group-item list-group-item-action"
+            >
+              Akun Saya
+            </a>
+            <a
+              href="/account-address.html"
+              class="list-group-item list-group-item-action"
+            >
+              Alamat
+            </a>
+            <a
+              href="/account-orders.html"
+              class="list-group-item list-group-item-action active"
+            >
+              Pesanan
+            </a>
+            <a
+              href="/login.html"
+              class="list-group-item list-group-item-action"
+            >
+              Logout
+              <img src="/icons/logout.svg" alt="" class="ml-2 icon-logout" />
+            </a>
+          </div>
+        </div>
+
         <!-- Page Content -->
         <div id="page-content-wrapper">
           <nav
@@ -93,6 +135,7 @@
               </div>
             </div>
           </nav>
+
           <!-- Section Content -->
           <div class="section-content section-account" data-aos="fade-up">
             <div class="container-fluid">
@@ -103,37 +146,21 @@
                 </h5>
                 <hr />
               </div>
-              <div class="store-breadcrumbs">
-                <div class="row">
-                  <div class="col-12">
-                    <nav>
-                      <ol class="breadcrumb">
-                        <a href="#" id="breadcrumb-link">
-                          <li class="breadcrumb-item active">
-                            <img
-                              src="/icons/chevron-left-sc50.svg"
-                              alt=""
-                              class="mr-3"
-                            />
-                            Kembali
-                          </li>
-                        </a>
-                      </ol>
-                    </nav>
-                  </div>
-                </div>
-              </div>
               <div class="account-content">
+                <a href="/details-orders-review.html" class="nav-back">
+                  <img src="/icons/chevron-left-sc50.svg" alt="" />
+                  Kembali
+                </a>
                 <div class="row">
-                  <div class="col-12">
-                    <div class="card card-list d-block">
+                  <div class="col-12 mt-4">
+                    <div class="card-account card-list d-block">
                       <div class="card-body card-status-orders">
                         <div class="row">
                           <div class="col-md-12">Review Produk</div>
                         </div>
                       </div>
                     </div>
-                    <div class="card card-list d-block">
+                    <div class="card-account card-list d-block">
                       <div class="card-body card-information-orders">
                         <div class="row">
                           <div class="col-auto">
@@ -149,61 +176,53 @@
                         </div>
                         <hr />
                         <div class="review-container">
-                          <form
-                            id="review-form"
-                            action="/details-orders-done.html"
-                          >
-                            <div class="form-group">
-                              <div class="star-rating">
-                                <i
-                                  class="fas fa-star"
-                                  id="star-1"
-                                  onclick="setRating(1)"
-                                ></i>
-                                <i
-                                  class="fas fa-star"
-                                  id="star-2"
-                                  onclick="setRating(2)"
-                                ></i>
-                                <i
-                                  class="fas fa-star"
-                                  id="star-3"
-                                  onclick="setRating(3)"
-                                ></i>
-                                <i
-                                  class="fas fa-star"
-                                  id="star-4"
-                                  onclick="setRating(4)"
-                                ></i>
-                                <i
-                                  class="fas fa-star"
-                                  id="star-5"
-                                  onclick="setRating(5)"
-                                ></i>
-                                <input
-                                  type="hidden"
-                                  id="rating"
-                                  name="rating"
-                                  value="0"
-                                />
-                              </div>
+                          <div class="review-rating">
+                            <span class="star" data-index="1">&#9734;</span>
+                            <span class="star" data-index="2">&#9734;</span>
+                            <span class="star" data-index="3">&#9734;</span>
+                            <span class="star" data-index="4">&#9734;</span>
+                            <span class="star" data-index="5">&#9734;</span>
+                            <!-- Bintang kosong -->
+                          </div>
+
+                          <div class="row review-actions">
+                            <div class="col-12">
+                              <input
+                                type="file"
+                                id="file"
+                                style="display: none"
+                                multiple
+                              />
+                              <button
+                                class="add-btn btn-block form-control"
+                                onclick="thisFileUpload()"
+                              >
+                                <i class="icon-camera">
+                                  <img
+                                    src="/icons/camera-plus-pr50.svg"
+                                    alt=""
+                                  />
+                                </i>
+                                Tambah Foto & Video
+                              </button>
                             </div>
-                            <div class="form-group">
-                              <textarea
-                                id="review-text"
-                                name="review-text"
-                                rows="5"
-                                cols="50"
-                                placeholder="Tulis komentar disini"
-                              ></textarea>
-                            </div>
-                            <button
-                              type="submit"
-                              class="btn btn-primary btn-block"
+                          </div>
+
+                          <textarea
+                            name="editor"
+                            id="editor"
+                            rows="5"
+                            class="review-comment form-control"
+                            placeholder="Tulis komentar disini"
+                          ></textarea>
+                          <div class="review-submit text-center">
+                            <a
+                              href="/details-orders-done.html"
+                              class="btn btn-success btn-block"
                             >
-                              Kirim Ulasan
-                            </button>
-                          </form>
+                              Kirim
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -216,69 +235,73 @@
       </div>
     </div>
 
-    <!-- Overlay Element -->
-    <div class="overlay" id="overlay"></div>
-
-    <!-- Toast Element -->
-    <div
-      class="toast"
-      id="toast-message"
-      role="alert"
-      aria-live="assertive"
-      aria-atomic="true"
-    >
-      <div class="toast-body">
-        Apakah Anda yakin ingin keluar dari halaman ini?
-        <div class="mt-2 pt-2 border-top">
-          <button
-            type="button"
-            class="btn btn-secondary btn-sm"
-            data-bs-dismiss="toast"
-            onclick="console.log('Tombol Tidak diklik')"
-          >
-            Tidak
-          </button>
-          <a
-            href="/details-orders-review.html"
-            type="button"
-            class="btn btn-primary btn-sm"
-          >
-            Ya
-          </a>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery/jquery.slim.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-      document
-        .getElementById("breadcrumb-link")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          var toastElement = new bootstrap.Toast(
-            document.getElementById("toast-message"),
-            {
-              autohide: false,
-            }
-          );
-          document.getElementById("overlay").classList.add("show");
-          toastElement.show();
-
-          toastElement._element.addEventListener(
-            "hidden.bs.toast",
-            function () {
-              document.getElementById("overlay").classList.remove("show");
-            }
-          );
-        });
     </script>
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+    <script src="https://cdn.ckeditor.com/4.25.0-lts/standard/ckeditor.js"></script>
+    <script>
+      function thisFileUpload() {
+        document.getElementById("file").click();
+      }
+    </script>
+    <script>
+      CKEDITOR.replace("editor");
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const stars = document.querySelectorAll(".star");
+
+        stars.forEach((star, index) => {
+          star.addEventListener("click", function () {
+            const rating = index + 1;
+
+            // Mengisi bintang berdasarkan rating yang dipilih
+            stars.forEach((s, i) => {
+              if (i < rating) {
+                s.innerHTML = "&#9733;"; // Mengganti dengan bintang penuh
+              } else {
+                s.innerHTML = "&#9734;"; // Mengganti dengan bintang kosong
+              }
+            });
+          });
+
+          // Efek hover untuk memberikan indikasi visual saat pengguna hover
+          star.addEventListener("mouseover", function () {
+            stars.forEach((s, i) => {
+              if (i <= index) {
+                s.innerHTML = "&#9733;"; // Mengganti dengan bintang penuh
+              } else {
+                s.innerHTML = "&#9734;"; // Mengganti dengan bintang kosong
+              }
+            });
+          });
+
+          // Mengembalikan tampilan ke state saat ini setelah hover
+          star.addEventListener("mouseout", function () {
+            const currentRating = [...stars].filter(
+              (s) => s.innerHTML === "&#9733;"
+            ).length;
+
+            stars.forEach((s, i) => {
+              if (i < currentRating) {
+                s.innerHTML = "&#9733;"; // Mengganti dengan bintang penuh
+              } else {
+                s.innerHTML = "&#9734;"; // Mengganti dengan bintang kosong
+              }
+            });
+          });
+        });
+      });
+    </script>
   </body>
 </html>
